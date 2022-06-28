@@ -1,0 +1,67 @@
+@import '../../../styles/variables.scss';
+
+.user {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+
+  @include md($tablet) {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  @include md($desktop) {
+    flex: 0 0 calc((100% / 3) - 19.33px);
+  }
+
+  &__avatar {
+    align-self: center;
+    display: block;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  &__fullname {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__email {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/variables.scss';
+
+.getrequest {
+  &__content {
+    align-items: center;
+    padding-top: 140px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__users-list {
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}
+
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+
+  @include md($tablet) {
+    gap: 16px;
+  }
+
+  @include md($desktop) {
+    gap: 29px;
+  }
+}

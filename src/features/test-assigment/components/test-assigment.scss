@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.assigment {
+  background: url('../../../../public/img/bg.png') no-repeat center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    margin: 0px auto;
+    padding-top: 40px;
+    min-height: 500px;
+
+    @include md($tablet) {
+      padding-top: 89px;
+    }
+
+    @include md($desktop) {
+      padding-top: 164px;
+      min-height: 650px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    color: #ffffff;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
